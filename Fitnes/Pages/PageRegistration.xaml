@@ -1,0 +1,35 @@
+﻿<Page x:Class="Fitnes.Pages.PageRegistration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Fitnes.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageRegistration">
+
+    <Grid>
+        <StackPanel>
+            <Label Content="Фамилия:" HorizontalAlignment="Center"/>
+            <TextBox Width="300"/>
+            <Label Content="Имя:" HorizontalAlignment="Center"/>
+            <TextBox Width="300"/>
+            <Label Content="Отчество:" HorizontalAlignment="Center"/>
+            <TextBox Width="300"/>
+            <Label Content="Телефон:" HorizontalAlignment="Center"/>
+            <TextBox Width="300"/>
+            <Label Content="Дата рождения:" HorizontalAlignment="Center"/>
+            <DatePicker Width="300"/>
+            <Label Content="Пол:" HorizontalAlignment="Center"/>
+            <StackPanel HorizontalAlignment="Center">
+                <RadioButton Content="Мужской"/>
+                <RadioButton Content="Женский"/>
+            </StackPanel>
+            <Label Content="Фото:" HorizontalAlignment="Center"/>
+            <InkCanvas Background="#FFCAEFEF" Height="50" Width="50"/>
+            <Label Content="Пароль:" HorizontalAlignment="Center"/>
+            <TextBox Width="300"/>
+            <Button Content="Зарегистрироваться" x:Name="ButtonRegistration" Click="ButtonRegistration_Click" Width="120" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,21 @@
+﻿<Page x:Class="Fitnes.Pages.TrainerMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Fitnes.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TrainerMenu">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Top">
+            <Label Content="Меню:" Grid.Row="1" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center">
+            <Button Content="Выбор клиентов" x:Name="ButtonСhoiceclient" Click="ButtonСhoiceclient_Click" Margin="5" Width="130" Height="18" FontFamily="Times New Roman" Background="White"/>
+            <Button Content="Занятия клиентов" x:Name="ButtonClientActivities" Click="ButtonClientActivities_Click" Margin="5" Width="130" Height="18" FontFamily="Times New Roman" Background="White"/>
+            <Button Content="Подробнее о клиентах" x:Name="ButtonMoreAboutClients" Click="ButtonMoreAboutClients_Click" Margin="5" Width="130" Height="18" FontFamily="Times New Roman" Background="White"/>
+        </StackPanel>
+    </Grid>
+</Page>
